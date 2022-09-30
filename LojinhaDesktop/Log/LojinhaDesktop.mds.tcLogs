@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44541.6713428704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5759D745-4FF6-4B99-8AF9-BCD14210E6F4}"/>
+				<Prp name="nameofroot" type="S" value="LojinhaDesktop"/>
+				<Prp name="relpath" type="S" value="12_11_2021_4_06 _44_24\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44542.6135726042"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{03FD2C2E-4626-48C6-B696-12EAA9C52476}"/>
+				<Prp name="nameofroot" type="S" value="Testas da Adição do Produto"/>
+				<Prp name="relpath" type="S" value="12_12_2021_14_43_32_673\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="The edit box has the ES_NUMBER style. All the characters, except for numbers, are truncated."/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There is (are) 1 running instance(s) of &quot;E:\TRABALHO\All_About_Test\Julio_Lima\PTQS\AULAS\Modulo_12\Material_de_apoio\Lojinha+Desktop\Lojinha.exe&quot;. New instances will not be launched."/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="durationwithoutchildren" type="I" value="4764"/>
+						<Prp name="duration" type="I" value="4764"/>
+						<Prp name="starttime" type="D" value="44541.6713429514"/>
+						<Prp name="name" type="S" value="ProjectTestItem1"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4AEMAMABBADkARAA2ADAALQA5ADAAOQA3AC0ANAA5ADgAMAAtADgAQwBEAEEALQBEADUAOAA2AEEANAAyAEEAQwAyAEIAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="1"/>
+					</Node>
+				</Node>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44541.6713429514"/>
+				<Prp name="duration" type="I" value="4764"/>
+				<Prp name="name" type="S" value="LojinhaDesktop"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="failedtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="testname" type="S" value="LojinhaDesktop"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="stop" type="D" value="44541.6713987153"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="name" type="S" value="LojinhaDesktop"/>
+		<Prp name="tests" type="I" value="1"/>
+		<Prp name="executionstatus" type="I" value="1"/>
+		<Prp name="user" type="S" value="kaus"/>
+		<Prp name="starttime" type="D" value="44541.6713429282"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="key" type="S" value="{367A3520-47FF-4165-884C-88CF9478D96D}"/>
+		<Prp name="host" type="S" value="APOLLO11_PC"/>
+	</Node>
+</Nodes>

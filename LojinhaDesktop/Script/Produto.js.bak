@@ -1,0 +1,35 @@
+﻿
+function abrirLojinha(){
+  //Executando App da Lojinha Desktop
+   TestedApps.Lojinha.Run();
+}
+
+function loginLojinha(usuario,senha){   
+    //Efetuando login do usuário   
+    let fomularioLogin = Aliases.Lojinha.frmPrincipal.PageControl1.;    
+    fomularioLogin.edtUsuario.SetText(usuario);
+    fomularioLogin.edtSenha.SetText(senha);
+    fomularioLogin.btnEntrar.ClickButton();
+}
+
+function listaProduto()
+
+function Test1()
+{
+    pageControl.TabSheet2.Panel3.btnNovoProduto.ClickButton();
+  let panel = pageControl.TabSheet3.Panel6;
+  edit = panel.edtNovoNomeProduto;
+  edit.Click(120, 10);
+  edit.SetText("Iphone");
+  edit.Keys("[Tab]");
+  panel.edtNovoValorProduto.SetText("7.000,01");
+  panel.Drag(147, 148, 1, 6);
+  edit = panel.edtNovoCoresProduto;
+  edit.Click(84, 3);
+  edit.SetText("preto , azul");
+  panel.btnSalvarProduto.ClickButton();
+  aqObject.CheckProperty(Aliases.Lojinha.dlgLojinha.Static, "WndCaption", cmpEqual, "O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00.");
+  Aliases.explorer.wndShell_TrayWnd.DesktopWindowXamlSource.Click(1137, 24);
+  lojinha.dlgLojinha.btnOK.ClickButton();
+  tfrmPrincipal.Close();
+}
